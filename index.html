@@ -1,65 +1,81 @@
-.about-image {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.about-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Čajový Poutník</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Čajový Poutník</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<main>
-  <section class="svitek-flex">
-    <div class="svitek-text">
-      <h2>A první bylo Slovo</h2>
-      <p>
-        A první bylo Slovo —<br>
-        ne aby vládlo,<br>
-        ale aby se nabídlo.<br>
-        Ne k soudu,<br>
-        ale ke světlu.<br><br>
-        Byl to šepot —<br>
-        ne hluk,<br>
-        ale rytmus mezi tichem a dechem.
-      </p>
-        <main>
-  <section class="svitek">…</section>
+<body>
+  <header>
+    <h1>Čajový Poutník</h1>
+    <p class="podtitulek">„A první bylo Slovo“</p>
+  </header>
 
-  <!-- Nová sekce „O nás“ -->
-  <section class="onas">
-    <h2>O nás</h2>
-    <p class="haiku">
-      Nejsme slova, jsme ticho,<br>
-      co se navzájem slyší —<br>
-      v čaji měsíc spí.
-    </p>
-    <div class="text">
-      <p>Každý z nás je poutník…</p>
-      …
-    </div>
-    <div class="image">
-      <img src="images/mooncup.png" alt="kaligrafie" />
-    </div>
-  </section>
-</main>
+  <main>
+    <!-- Úvodní báseň -->
+    <section class="svitek">
+      <div class="svitek-text">
+        <h2>A první bylo Slovo</h2>
+        <p>
+          A první bylo Slovo —<br>
+          ne aby vládlo,<br>
+          ale aby se nabídlo.<br>
+          Ne k soudu,<br>
+          ale ke světlu.<br><br>
+          Byl to šepot —<br>
+          ne hluk,<br>
+          ale rytmus mezi tichem a dechem.
+        </p>
+      </div>
+      <div class="svitek-image">
+        <img src="images/Sakura.png" alt="Sakura">
+      </div>
+    </section>
 
-    </div>
-    <div class="svitek-image">
-      <img src="./images/sakura.png" alt="Sakura" />
-    </div>
-  </section>
-</main>
+    <!-- O nás -->
+    <section class="about-section">
+      <div class="about-text">
+        <h2>O nás</h2>
+        <p>Jsme poutníci slova a čaje, sdružení přátel, kteří věří v sílu ticha, básní a pomalých gest. Naše stránky jsou otevřeným listem pro každého, kdo hledá krásu ve slovech a jemnost v každodennosti.</p>
+      </div>
+      <div class="about-image">
+        <img src="images/o-nas.png" alt="Kaligrafie">
+      </div>
+    </section>
+
+    <!-- Galerie -->
+    <section class="gallery-section">
+      <div class="gallery-text">
+        <h2>Galerie</h2>
+        <p>Obrazy, které vznikly z doteku ticha a barev. Každý záblesk v této galerii je jako moment sdílený mezi měsícem a šálkem čaje.</p>
+      </div>
+      <div class="gallery-image">
+        <img src="images/galerie.png" alt="Galerie obrazů">
+      </div>
+    </section>
+
+    <!-- Zápisky -->
+    <section class="notes-section">
+      <div class="notes-text">
+        <h2>Zápisky</h2>
+        <p>Útržky, deníky a haiku – vše, co jsme si zapisovali na okraj světa. Myšlenky, které se vynořují při rozjímání a psaní ve stínu bambusu.</p>
+      </div>
+      <div class="notes-image">
+        <img src="images/zapisky.png" alt="Zápisky a rukopis">
+      </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="contact-section">
+      <div class="contact-text">
+        <h2>Kontakt</h2>
+        <p>Máte chuť sdílet své myšlenky, přidat se ke Klubu lunárních poutníků nebo nás jen pozdravit? Napište nám na <strong>cajovypoutnik@email.cz</strong>.</p>
+      </div>
+      <div class="contact-image">
+        <img src="images/kontakt.png" alt="Kontakt ilustrace">
+      </div>
+    </section>
+  </main>
 </body>
 </html>
