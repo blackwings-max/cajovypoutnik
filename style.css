@@ -49,3 +49,22 @@ h2 {
   font-size: 2em;
   margin-top: 0;
 }
+.svitek-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em;
+  gap: 3em;
+  flex-wrap: wrap;
+}
+
+.svitek-text {
+  max-width: 500px;
+}
+
+.svitek-image img {
+  max-width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
