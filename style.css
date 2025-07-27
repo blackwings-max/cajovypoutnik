@@ -12,51 +12,45 @@ header {
   background-image: url('./images/header.png');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  min-height: 250px;
-  color: white;
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-  box-shadow: inset 0 -10px 30px rgba(0, 0, 0, 0.15);
+  position: relative;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
 }
 
-/* Jemný přechod dolů z hlavičky */
+/* Přechod pod hlavičkou */
 header::after {
   content: "";
   display: block;
-  height: 30px;
+  height: 40px;
   background: linear-gradient(to bottom, rgba(248, 246, 241, 0) 0%, rgba(248, 246, 241, 1) 100%);
+  position: relative;
+  margin-top: -20px;
+  z-index: 0;
 }
 
-h1 {
-  font-size: 3em;
-  margin: 0;
-}
-
-.podtitůlek {
-  font-style: italic;
-  font-size: 1.5em;
-  margin-top: 0.5em;
-}
-
+/* Posunutí prvního svitku */
 main {
   padding: 2em;
+  margin-top: 2em;
 }
 
+.svitek:first-of-type {
+  margin-top: 3em;
+}
+
+/* Styl pro jednotlivé svitky */
 .svitek {
-  background-color: #fdfcf8;
-  margin: 2em auto;
+  background-color: #fdfcf9;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
   padding: 2em;
-  max-width: 800px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  margin: 2em auto;
+  max-width: 750px;
 }
 
-h2 {
-  font-size: 2em;
-  margin-bottom: 1em;
-}
-
-p {
-  font-size: 1.2em;
-  line-height: 1.6;
+/* Styl pro podtitulek */
+.podtitůlek {
+  font-style: italic;
+  font-size: 1.3em;
+  color: #7a7a7a;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
 }
