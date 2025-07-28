@@ -1,50 +1,53 @@
 
 body {
-  font-family: 'Georgia', serif;
-  background-color: #f8f6f1;
-  color: #2c2c2c;
-  margin: 0;
-  padding: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f8f2e4;
+    background-image: url('images/parchment.png');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
 }
-
-header {
-  text-align: center;
-  padding: 4em 2em;
-  background-image: url('./images/header.png');
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  text-shadow: 1px 1px 3px #000;
+header, footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 1em;
+    border-bottom: 2px solid #ccc;
 }
-
-h1 {
-  font-size: 3em;
-  margin-bottom: 0.2em;
+nav ul {
+    list-style: none;
+    padding: 0;
 }
-
-.podtitulek {
-  font-style: italic;
-  font-size: 1.2em;
-  opacity: 0.9;
+nav ul li {
+    display: inline-block;
+    margin: 0 1em;
 }
-
+a {
+    color: #664422;
+    text-decoration: none;
+}
 main {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 2em;
+    max-width: 800px;
+    margin: auto;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
-
-.svitek {
-  background: #fffef7;
-  border: 1px solid #e4e1d0;
-  padding: 2em;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.05);
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
-
-footer {
-  text-align: center;
-  font-size: 0.9em;
-  padding: 2em 0;
-  color: #999;
+blockquote {
+    font-style: italic;
+    background-color: #f2ecd9;
+    padding: 1em;
+    border-left: 4px solid #ccaa66;
+}
+.signature {
+    margin-top: 2em;
+    font-style: italic;
+    text-align: right;
+    color: #886644;
 }
