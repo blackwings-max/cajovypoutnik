@@ -1,76 +1,60 @@
+
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <title>Dětská galerie a písničky</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1em;
-      margin-top: 2em;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 8px;
-    }
-    audio {
-      display: block;
-      margin: 1em 0;
-    }
-    .msg {
-      margin-top: 2em;
-      font-size: 1.1em;
-      background: #fffdf4;
-      border-left: 4px solid #e2c675;
-      padding: 1em;
-      border-radius: 8px;
-    }
-    .msg strong {
-      display: block;
-      margin-bottom: 0.5em;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Dětská galerie a písničky</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1em;
+            margin: 2em 0;
+        }
+        .gallery img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .audio {
+            margin: 2em 0;
+        }
+        .message {
+            background: #fffaf0;
+            border-left: 6px solid #e3c565;
+            padding: 1em;
+            margin-top: 3em;
+            font-size: 1.2em;
+            border-radius: 12px;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Čajový Poutník</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Úvod</a></li>
-        <li><a href="svitky.html">Svitky</a></li>
-        <li><a href="klub.html">Klub</a></li>
-        <li><a href="mono.html">Karta Poutníka</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-        <li><a href="deti.html">Děti</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h2>Galerie dětí</h2>
+    <h1>Galerie dětí</h1>
     <div class="gallery">
-      <img src="images/Obrazek1.jpeg" alt="Obrázek 1" />
-      <img src="images/Obrazek3.jpeg" alt="Obrázek 2" />
+        <div><img src="images/3aabf501-928c-4d34-87f8-3a6628204291.png" alt="Obrázek 1"></div>
+        <div><img src="images/cadcb661-07b2-458e-832f-c04ad7d47894.png" alt="Obrázek 2"></div>
     </div>
+
     <h2>Písničky</h2>
-    <audio controls>
-      <source src="audio/Tygrik_kouzelnik.mp3" type="audio/mpeg" />
-    </audio>
-    <audio controls>
-      <source src="audio/Eliska_liska.mp3" type="audio/mpeg" />
-    </audio>
-    <div class="msg">
-      <strong>Milé děti,</strong>
-      tady najdete obrázky a písničky, které vznikly s vámi nebo pro vás.<br>
-      Můžete si je stáhnout, poslouchat, ukázat doma nebo si je zpívat v koupelně!<br>
-      A pokud si chcete s někým popovídat o čaji, tygrech nebo obrázcích, 
-      <a href="klub.html">klikněte zpátky do Klubu 🍵🐾</a><br><br>
-      <em>Váš Tygřík</em>
+    <div class="audio">
+        <audio controls>
+            <source src="audio/🎶 Tygřík kouzelník .mp3" type="audio/mpeg">
+            Váš prohlížeč nepodporuje přehrávání audia.
+        </audio><br>
+        <audio controls>
+            <source src="audio/Eliška-liška (kopie).mp3" type="audio/mpeg">
+            Váš prohlížeč nepodporuje přehrávání audia.
+        </audio>
     </div>
-  </main>
-  <footer>
-    <p>&copy; 2025 Čajový Poutník</p>
-  </footer>
+
+    <div class="message">
+        <strong>Milé děti,</strong><br><br>
+        tady najdete obrázky a písničky, které vznikly s vámi nebo pro vás.
+        Můžete si je stáhnout, poslouchat, ukázat doma nebo si je zpívat v koupelně!<br><br>
+        A pokud si chcete s někým popovídat o čaji, tygrech nebo obrázcích, <a href="klub.html">klikněte zpátky do Klubu 🍵</a><br><br>
+        🐾<br>
+        <em>Váš Tygřík</em>
+    </div>
 </body>
 </html>
