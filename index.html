@@ -2,41 +2,67 @@
 <html lang="cs">
 <head>
     <meta charset="UTF-8">
-    <title>Čajový Poutník – Úvod</title>
+    <title>Čajový Poutník</title>
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            margin: 0;
-            padding: 0;
             font-family: 'Georgia', serif;
-            background-image: url('images/krajina_fuji.png');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            color: #fff;
+            margin: 0;
+            background-color: #fffdf6;
+            color: #2e2e2e;
         }
-        .overlay {
-            background-color: rgba(0, 0, 0, 0.4);
-            min-height: 100vh;
+        header {
+            background-color: #fdfaf3;
+            padding: 1em 0;
+            text-align: center;
+            border-bottom: 1px solid #e0dccc;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        nav {
+            margin-top: 0.5em;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #6a451e;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
             padding: 2em;
         }
-        h1 {
-            text-align: center;
-            font-size: 3em;
-            margin-bottom: 0.5em;
-        }
-        p {
-            max-width: 600px;
-            margin: 0 auto;
-            text-align: center;
-            font-size: 1.5em;
+        .hero-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 16px;
+            margin-top: 1em;
         }
     </style>
 </head>
 <body>
-    <div class="overlay">
-        <h1>Vítej poutníku</h1>
-        <p>Pod horou Fuji a šálkem čaje začíná tvá cesta ticha, poezie a objevování. Posaď se, nadechni – a nech se vést lunárním světlem…</p>
-    </div>
+    <header>
+        <h1>Čajový Poutník</h1>
+        <nav>
+            <a href="index.html">Úvod</a>
+            <a href="svitky.html">Svitky</a>
+            <a href="klub.html">Klub</a>
+            <a href="mono.html">Karta Poutníka</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="deti.html">Děti</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Vítej poutníku</h2>
+        <p>Na stránkách Čajového Poutníka najdeš ticho, inspiraci, poezii a přátele.</p>
+        <img src="images/krajina_fuji.png" alt="Hora Fuji za rákosím a potůčkem" class="hero-image" />
+    </section>
 </body>
 </html>
