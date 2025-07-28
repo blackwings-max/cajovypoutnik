@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Dětská galerie a písničky</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <style>
     .gallery {
       display: grid;
@@ -15,17 +14,22 @@
     .gallery img {
       width: 100%;
       border-radius: 8px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
-    .audio-box {
-      margin: 2em 0;
+    audio {
+      display: block;
+      margin: 1em 0;
+    }
+    .msg {
+      margin-top: 2em;
+      font-size: 1.1em;
+      background: #fffdf4;
+      border-left: 4px solid #e2c675;
       padding: 1em;
-      background: #fff8e1;
-      border-left: 5px solid #d2691e;
-      border-radius: 6px;
+      border-radius: 8px;
     }
-    .audio-box h3 {
-      margin-top: 0;
+    .msg strong {
+      display: block;
+      margin-bottom: 0.5em;
     }
   </style>
 </head>
@@ -38,58 +42,35 @@
         <li><a href="svitky.html">Svitky</a></li>
         <li><a href="klub.html">Klub</a></li>
         <li><a href="mono.html">Karta Poutníka</a></li>
-        <li><a href="deti.html">Děti</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="deti.html">Děti</a></li>
       </ul>
     </nav>
   </header>
-
   <main>
-    
-<h2>🎨 Dětská galerie a písničky</h2>
-<p>
-  Milé děti,<br>
-  tady najdete obrázky a písničky, které vznikly s vámi nebo pro vás.<br>
-  Můžete si je stáhnout, poslouchat, ukázat doma nebo si je zpívat v koupelně!<br>
-  A pokud si chcete s někým popovídat o čaji, tygrech nebo obrázcích, klikněte zpátky do Klubu 🍵🐾
-</p>
-<p style="font-style: italic; margin-bottom: 2em;">Váš Tygřík 🐯</p>
-
-
-    <section class="gallery">
-      <img src="images/img1.jpeg" alt="Princezna a pes">
-      <img src="images/img2.jpeg" alt="Obchodník a kurýr">
-      <img src="images/img3.jpeg" alt="Chlapec a lev">
-      <img src="images/img4.jpeg" alt="Skřítek a dráček">
-      <img src="images/img5.jpeg" alt="Chlapec zpěvák">
-      <img src="images/img6.jpeg" alt="Gejša a malý samuraj">
-      <img src="images/img7.jpeg" alt="Princezna s perlami">
-      <img src="images/img8.jpeg" alt="Princezna se sokolem">
-    </section>
-
-    <div class="audio-box">
-      <h3>🎵 Tygřík kouzelník</h3>
-      <audio controls>
-        <source src="audio/tygrik.mp3" type="audio/mpeg">
-        Tvůj prohlížeč nepodporuje přehrávač.
-      </audio>
+    <h2>Galerie dětí</h2>
+    <div class="gallery">
+      <img src="images/Obrazek1.jpeg" alt="Obrázek 1" />
+      <img src="images/Obrazek3.jpeg" alt="Obrázek 2" />
     </div>
-
-    <div class="audio-box">
-      <h3>🦊 Eliška-liška</h3>
-      <audio controls>
-        <source src="audio/elisakop.mp3" type="audio/mpeg">
-        Tvůj prohlížeč nepodporuje přehrávač.
-      </audio>
+    <h2>Písničky</h2>
+    <audio controls>
+      <source src="audio/Tygrik_kouzelnik.mp3" type="audio/mpeg" />
+    </audio>
+    <audio controls>
+      <source src="audio/Eliska_liska.mp3" type="audio/mpeg" />
+    </audio>
+    <div class="msg">
+      <strong>Milé děti,</strong>
+      tady najdete obrázky a písničky, které vznikly s vámi nebo pro vás.<br>
+      Můžete si je stáhnout, poslouchat, ukázat doma nebo si je zpívat v koupelně!<br>
+      A pokud si chcete s někým popovídat o čaji, tygrech nebo obrázcích, 
+      <a href="klub.html">klikněte zpátky do Klubu 🍵🐾</a><br><br>
+      <em>Váš Tygřík</em>
     </div>
-
-    <p style="margin-top:2em;">
-      💌 Děkujeme, že tvoříte s námi. Můžete si obrázky i písničky stáhnout a sdílet radost dál!
-    </p>
   </main>
-
   <footer>
-    <p>&copy; 2025 Čajový Poutník · 🌸 dětská radost pod Lunou</p>
+    <p>&copy; 2025 Čajový Poutník</p>
   </footer>
 </body>
 </html>
