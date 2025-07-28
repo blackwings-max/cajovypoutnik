@@ -1,0 +1,53 @@
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: #f8f2e4;
+    background-image: url('images/parchment.png');
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+header, footer {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 1em;
+    border-bottom: 2px solid #ccc;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 1em;
+}
+a {
+    color: #664422;
+    text-decoration: none;
+}
+main {
+    max-width: 800px;
+    margin: auto;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+blockquote {
+    font-style: italic;
+    background-color: #f2ecd9;
+    padding: 1em;
+    border-left: 4px solid #ccaa66;
+}
+.signature {
+    margin-top: 2em;
+    font-style: italic;
+    text-align: right;
+    color: #886644;
+}
