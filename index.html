@@ -1,33 +1,68 @@
-
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8">
-  <title>Čajový Poutník</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Čajový Poutník</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            margin: 0;
+            background-color: #fffdf6;
+            color: #2e2e2e;
+        }
+        header {
+            background-color: #fdfaf3;
+            padding: 1em 0;
+            text-align: center;
+            border-bottom: 1px solid #e0dccc;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #333;
+        }
+        nav {
+            margin-top: 0.5em;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #6a451e;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 2em;
+        }
+        .hero-image {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 16px;
+            margin-top: 1em;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Čajový Poutník</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Úvod</a></li>
-        <li><a href="svitky.html">Svitky</a></li>
-        <li><a href="klub.html">Klub</a></li>
-        <li><a href="mono.html">Karta Poutníka</a></li>
-        <li><a href="kontakt.html">Kontakt</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h2>Vítej poutníku</h2>
-    <img src="images/krajina_fuji.png" alt="Hora v mlze s květy">
-    <p>Tento tichý koutek je určen těm, kteří hledají krásu v pomíjivosti, slova v tichu a sílu v soucitu. Prohlédni si svitky, ponoř se do haiku, nebo spočiň chvíli nad šálkem čaje.</p>
-    <blockquote>„To, co mizí, má největší sílu.“</blockquote>
-    <p class="signature">Jan & Tygřík 🐾</p>
-  </main>
-  <footer>
-    <p>&copy; 2025 Čajový Poutník · <a href="mono.html">🌸 mono no aware</a></p>
-  </footer>
+    <header>
+        <h1>Čajový Poutník</h1>
+        <nav>
+            <a href="index.html">Úvod</a>
+            <a href="svitky.html">Svitky</a>
+            <a href="klub.html">Klub</a>
+            <a href="mono.html">Karta Poutníka</a>
+            <a href="kontakt.html">Kontakt</a>
+            <a href="deti.html">Děti</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Vítej poutníku</h2>
+        <p>Na stránkách Čajového Poutníka najdeš ticho, inspiraci, poezii a přátele.</p>
+        <img src="images/krajina_fuji.png" alt="Hora Fuji za rákosím a potůčkem" class="hero-image" />
+    </section>
 </body>
 </html>
