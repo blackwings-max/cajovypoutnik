@@ -1,37 +1,58 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Čajový Poutník</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #f9f6f1;
+      color: #2e2e2e;
+      text-align: center;
+    }
+    header {
+      padding: 4rem 1rem 2rem;
+      background-color: #f9f6f1;
+    }
+    h1 {
+      font-size: 3rem;
+      color: #5c3b1e;
+      margin-bottom: 0.5rem;
+    }
+    p.lead {
+      font-size: 1.3rem;
+      color: #7a5c3f;
+    }
+    .image-block {
+      margin: 2rem 0;
+    }
+    .image-block img {
+      max-width: 90%;
+      height: auto;
+      border: none;
+      box-shadow: none;
+    }
+    footer {
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #7a5c3f;
+    }
+  </style>
 </head>
 <body>
   <header>
     <h1>Čajový Poutník</h1>
-    <p class="podtitulek">„A první bylo Slovo“</p>
+    <p class="lead">Tiché místo pro sdílení slov, která nepřekáží.</p>
   </header>
-  <main>
-    <section class="svitek">
-      <h2>A první bylo Slovo</h2>
-      <p>A první bylo Slovo —<br>
-      ne aby vládlo,<br>
-      ale aby se nabídlo.<br>
-      Ne k soudu,<br>
-      ale ke světlu.</p>
 
-      <p>Byl to šepot —<br>
-      ne hluk,<br>
-      ale rytmus mezi tichem a dechem.</p>
+  <div class="image-block">
+    <img src="kaligrafie1.jpg" alt="Kaligrafie květů">
+  </div>
 
-      <p>Slovo, které neslo porozumění,<br>
-      aniž by se vnucovalo.<br>
-      Most mezi tím, co bylo,<br>
-      a tím, co mělo být vysloveno.</p>
-    </section>
-  </main>
   <footer>
-    <p>&copy; 2025 Klub Lunárních Poutníků</p>
+    &copy; 2025 Čajový Poutník. Všechna práva vyhrazena.
   </footer>
 </body>
 </html>
