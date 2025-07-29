@@ -4,91 +4,105 @@
 <head>
   <meta charset="UTF-8">
   <title>Čajový Poutník</title>
+  <link rel="stylesheet" href="style.css">
   <style>
-    html, body {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
-      font-family: 'Georgia', serif;
-      background-image: url('images/krajina_fuji.png');
+      background: url('images/krajina_fuji.png') no-repeat center center fixed;
       background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      color: #fff;
+      font-family: 'Georgia', serif;
+      color: white;
     }
-    nav {
+
+    header, nav, footer {
       background-color: rgba(0, 0, 0, 0.5);
-      text-align: center;
       padding: 1em;
-      position: absolute;
-      top: 0;
-      width: 100%;
+      text-align: center;
     }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      flex-wrap: wrap;
+    }
+
     nav a {
-      color: #fff;
+      color: white;
       text-decoration: none;
-      margin: 0 1em;
       font-weight: bold;
     }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .overlay {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      padding: 4em 2em 2em;
-      box-sizing: border-box;
-      background-color: rgba(0, 0, 0, 0.4);
-    }
-    .poem {
-      max-width: 800px;
+
+    main {
+      padding: 5% 10%;
       text-align: center;
-      line-height: 1.8;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    main p {
       font-size: 1.4em;
-      white-space: pre-line;
+      margin: 1.5em 0;
+    }
+
+    footer {
+      margin-top: 3em;
+      font-size: 0.9em;
+    }
+
+    @media (max-width: 768px) {
+      main p {
+        font-size: 1.1em;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 0.5em;
+      }
     }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Úvod</a>
-    <a href="svitky.html">Svitky</a>
-    <a href="mono.html">Karta Poutníka</a>
-    <a href="klub.html">Klub</a>
-    <a href="kontakt.html">Kontakt</a>
-    <a href="deti.html">Děti</a>
-  </nav>
-  <div class="overlay">
-    <div class="poem">
-Poetika stínů, má je cesta, cesta všech poutníků,  
-v srdci samuraje spí duše nebeská.  
-Haiku se rozplývá v ranním dechu, rozplývá se cesta,  
-příroda mlčí… a v ní odraz smíchu.  
+  <header>
+    <h1>Čajový Poutník</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Úvod</a></li>
+        <li><a href="svitky.html">Svitky</a></li>
+        <li><a href="klub.html">Klub</a></li>
+        <li><a href="mono.html">Karta Poutníka</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="deti.html">Děti</a></li>
+      </ul>
+    </nav>
+  </header>
 
-Tygr tiše vrní — mapu otisk v písku,  
-ve vlnách pouště i na Azuru bez tíže.  
-Hudba a láska, proměny v jedné vlně,  
-slova jak misky, co jména mi šeptají.  
+  <main>
+    <p>Poetika stínů, má je cesta, cesta všech poutníků,</p>
+    <p>v srdci samuraje spí duše nebeská.</p>
+    <p>Haiku se rozplývá v ranním dechu, rozplývá se cesta,</p>
+    <p>příroda mlčí… a v ní odraz smíchu.</p>
 
-Spánek to ví - spánek už to zná,  
-co zůstává nevyřčeno,  
-čajové lístky a  
-ticho, co šeptem odpovídá.  
+    <p>Tygr tiše vrní — mapu otisk v písku,</p>
+    <p>ve vlnách pouště i na Azuru bez tíže.</p>
+    <p>Hudba a láska, proměny v jedné vlně,</p>
+    <p>slova jak misky, co jména mi šeptají.</p>
 
-Až příště zapomenu — připomeň mi:  
-že vše, co hledáme, už v sobě nosíme.  
-Stačí usednout.  
-Jen Dýchat.  
-A tiše Být.
-    </div>
-  </div>
+    <p>Spánek to ví - spánek už to zná,</p>
+    <p>co zůstává nevyřčeno,</p>
+    <p>čajové lístky a</p>
+    <p>ticho, co šeptem odpovídá.</p>
+
+    <p><strong>Až příště zapomenu — připomeň mi:</strong></p>
+    <p>že vše, co hledáme, už v sobě nosíme.</p>
+    <p><strong>Stačí usednout.<br>Jen Dýchat.<br>A tiše Být.</strong></p>
+  </main>
 
   <footer>
-    <p style="text-align:center; padding: 1em; background-color: rgba(0, 0, 0, 0.5); color: #ccc; font-size: 0.9em;">
-      © 2025 Klub lunárních poutníků | V čaji je přítomno vše.
-    </p>
+    <p>&copy; 2025 Klub lunárních poutníků | Čaj je přítomno vše.</p>
   </footer>
 </body>
 </html>
