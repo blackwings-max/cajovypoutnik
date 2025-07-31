@@ -1,1 +1,73 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <title>Galerie – Tvorba dětí</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .gallery-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .gallery-item {
+      flex: 1 1 calc(33% - 40px);
+      max-width: 30%;
+    }
+    @media screen and (max-width: 768px) {
+      .gallery-item {
+        flex: 1 1 100%;
+        max-width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Čajový Poutník</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Úvod</a></li>
+        <li><a href="svitky.html">Svitky</a></li>
+        <li><a href="klub.html">Klub</a></li>
+        <li><a href="mono.html">Karta Poutníka</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="galerie.html">Galerie</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>🖼️ Galerie – Tvorba žáků na prvním stupni základní školy</h2>
+    <p><strong>🍵 Princip čaje: klid, který mluví</strong><br>
+    „Učit není výkon. Je to pozvání.“</p>
+    <ul>
+      <li>Vytváříme prostor, kde se dítě cítí bezpečně.</li>
+      <li>Nehodnotíme hned – nasloucháme procesu.</li>
+      <li>Dáváme čas: ticho mezi otázkou a odpovědí je součástí učení.</li>
+    </ul>
+
+    <div class="gallery-container">
+      <div class="gallery-item"><img src="images/gallery_img_1.jpg" alt="Tvorba dětí 1"></div>
+      <div class="gallery-item"><img src="images/gallery_img_2.jpg" alt="Tvorba dětí 2"></div>
+      <div class="gallery-item"><img src="images/gallery_img_3.jpg" alt="Tvorba dětí 3"></div>
+      <div class="gallery-item"><img src="images/gallery_img_4.jpg" alt="Tvorba dětí 4"></div>
+      <div class="gallery-item"><img src="images/gallery_img_5.jpg" alt="Tvorba dětí 5"></div>
+      <div class="gallery-item"><img src="images/gallery_img_6.jpg" alt="Tvorba dětí 6"></div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Čajový Poutník · <a href="mono.html">🌸 mono no aware</a></p>
+  </footer>
+</body>
+</html>
 
